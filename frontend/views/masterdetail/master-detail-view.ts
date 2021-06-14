@@ -139,9 +139,6 @@ export class MasterDetailView extends View {
     if (item) {
       const fromBackend = await SamplePersonEndpoint.get(item.id!);
       fromBackend ? this.binder.read(fromBackend) : this.refreshGrid();
-      if(item.importance && item.importance.immportant && (item.importance.level??0) > 3){
-        alert('very important')
-      }
     } else {
       this.clearForm();
     }
