@@ -13,6 +13,7 @@ import '@vaadin/vaadin-icons';
 import '@vaadin/vaadin-ordered-layout/vaadin-horizontal-layout';
 import '@vaadin/vaadin-split-layout';
 import '@vaadin/vaadin-text-field';
+import '@vaadin/vaadin-text-field/vaadin-number-field';
 import '@vaadin/vaadin-upload';
 import SamplePerson from 'Frontend/generated/com/example/application/data/entity/SamplePerson';
 import SamplePersonModel from 'Frontend/generated/com/example/application/data/entity/SamplePersonModel';
@@ -95,10 +96,16 @@ export class MasterDetailView extends View {
               ></vaadin-text-field
               ><vaadin-checkbox
                 id="important"
-                ${field(this.binder.model.important)}
+                ${field(this.binder.model.importance.immportant)}
                 style="padding-top: var(--lumo-space-m);"
                 >Important</vaadin-checkbox
-              ></vaadin-form-layout
+              ><vaadin-number-field
+                id="important-level"
+                ${field(this.binder.model.importance.level)}
+                style="padding-top: var(--lumo-space-m);"
+                >Importance Level</vaadin-number-field
+              >
+              </vaadin-form-layout
             >
           </div>
           <vaadin-horizontal-layout class="w-full flex-wrap bg-contrast-5 py-s px-l" theme="spacing">
@@ -132,6 +139,9 @@ export class MasterDetailView extends View {
     if (item) {
       const fromBackend = await SamplePersonEndpoint.get(item.id!);
       fromBackend ? this.binder.read(fromBackend) : this.refreshGrid();
+      if(item.importance && item.importance.immportant && (item.importance.level??0) > 3){
+        alert('very important')
+      }
     } else {
       this.clearForm();
     }

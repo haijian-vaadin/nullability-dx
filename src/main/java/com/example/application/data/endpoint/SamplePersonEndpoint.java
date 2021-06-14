@@ -6,9 +6,6 @@ import com.example.application.data.service.SamplePersonService;
 import com.vaadin.flow.server.connect.Endpoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import javax.validation.constraints.Email;
-import java.time.LocalDate;
-import javax.annotation.Nullable;
 
 @Endpoint
 public class SamplePersonEndpoint extends CrudEndpoint<SamplePerson, Integer> {
@@ -23,5 +20,4 @@ public class SamplePersonEndpoint extends CrudEndpoint<SamplePerson, Integer> {
     protected SamplePersonService getService() {
         return service;
     }
-
 }

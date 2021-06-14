@@ -1,8 +1,10 @@
 package com.example.application.data.entity;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 
 import com.example.application.data.AbstractEntity;
+
 import javax.validation.constraints.Email;
 import java.time.LocalDate;
 import javax.annotation.Nullable;
@@ -18,7 +20,8 @@ public class SamplePerson extends AbstractEntity {
     @Nullable
     private LocalDate dateOfBirth;
     private String occupation;
-    private boolean important;
+    @Embedded
+    private Importance importance = new Importance();
 
     public String getFirstName() {
         return firstName;
@@ -56,11 +59,11 @@ public class SamplePerson extends AbstractEntity {
     public void setOccupation(String occupation) {
         this.occupation = occupation;
     }
-    public boolean isImportant() {
-        return important;
+    public Importance getImportance() {
+        return importance;
     }
-    public void setImportant(boolean important) {
-        this.important = important;
+    public void setImportance(Importance importance) {
+        this.importance = importance;
     }
-
+    
 }
