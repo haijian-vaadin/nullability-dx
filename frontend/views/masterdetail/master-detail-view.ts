@@ -96,7 +96,7 @@ export class MasterDetailView extends View {
               ></vaadin-text-field
               ><vaadin-checkbox
                 id="important"
-                ${field(this.binder.model.importance.immportant)}
+                ${field(this.binder.model.importance.important)}
                 style="padding-top: var(--lumo-space-m);"
                 >Important</vaadin-checkbox
               ><vaadin-number-field
