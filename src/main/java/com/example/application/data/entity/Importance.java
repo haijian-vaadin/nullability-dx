@@ -7,11 +7,11 @@ public class Importance {
     private boolean important;
     private int level;
 
-    public boolean isImmportant() {
+    public boolean important() {
         return important;
     }
-    public void setImmportant(boolean immportant) {
-        this.important = immportant;
+    public void setImportant(boolean important) {
+        this.important = important;
     }
     public int getLevel() {
         return level;
