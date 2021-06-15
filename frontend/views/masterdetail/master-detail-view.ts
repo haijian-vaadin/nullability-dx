@@ -119,7 +119,7 @@ export class MasterDetailView extends View {
 
   private async getGridData(
     params: GridDataProviderParams<SamplePerson>,
-    callback: GridDataProviderCallback<SamplePerson>
+    callback: GridDataProviderCallback<SamplePerson | undefined>
   ) {
     const index = params.page * params.pageSize;
     const data = await SamplePersonEndpoint.list(index, params.pageSize, params.sortOrders as any);
