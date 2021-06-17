@@ -28,6 +28,7 @@
     "@vaadin/vaadin-form-layout": "21.0.0-alpha6",
     "@vaadin/vaadin-grid": "21.0.0-alpha6",
     "@vaadin/vaadin-grid-pro": "21.0.0-alpha6",
+    "@vaadin/vaadin-icon": "21.0.0-alpha6",
     "@vaadin/vaadin-icons": "21.0.0-alpha6",
     "@vaadin/vaadin-item": "21.0.0-alpha6",
     "@vaadin/vaadin-list-box": "21.0.0-alpha6",
@@ -53,9 +54,7 @@
     "leaflet": "^1.7.1",
     "lit": "2.0.0-rc.1",
     "lumo-css-framework": "^4.0.10",
-    "mobx": "^6.1.5",
-    "@vaadin/vaadin-core-shrinkwrap": "21.0.0-alpha4",
-    "@vaadin/vaadin-shrinkwrap": "21.0.0-alpha4"
+    "mobx": "^6.1.5"
   },
   "devDependencies": {
     "@types/validator": "13.1.0",
@@ -114,6 +113,7 @@
       "@vaadin/vaadin-form-layout": "21.0.0-alpha6",
       "@vaadin/vaadin-grid": "21.0.0-alpha6",
       "@vaadin/vaadin-grid-pro": "21.0.0-alpha6",
+      "@vaadin/vaadin-icon": "21.0.0-alpha6",
       "@vaadin/vaadin-icons": "21.0.0-alpha6",
       "@vaadin/vaadin-item": "21.0.0-alpha6",
       "@vaadin/vaadin-list-box": "21.0.0-alpha6",
@@ -136,9 +136,7 @@
       "@vaadin/vaadin-upload": "21.0.0-alpha6",
       "@vaadin/vaadin-virtual-list": "21.0.0-alpha6",
       "construct-style-sheets-polyfill": "2.4.16",
-      "lit": "2.0.0-rc.1",
-      "@vaadin/vaadin-core-shrinkwrap": "21.0.0-alpha4",
-      "@vaadin/vaadin-shrinkwrap": "21.0.0-alpha4"
+      "lit": "2.0.0-rc.1"
     },
     "devDependencies": {
       "@types/validator": "13.1.0",
@@ -165,6 +163,6 @@
       "workbox-precaching": "6.1.0",
       "workbox-webpack-plugin": "6.1.0"
     },
-    "hash": "7278d80fece9037b376ca13bc9c076022a970d06c51f7dc258a1f4df28201195"
+    "hash": "92b5e7de8b684e33fdea7c89705129e31ce9634053f8f338a0e8202ff652ae1f"
   }
 }
